@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wangyi.bwie.com.wangyinews.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/hengtiao_title"
+        android:layout_width="match_parent"
+        android:layout_height="45sp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5sp"
+            android:id="@+id/iv_santiao"
+            android:src="@drawable/san"
+            android:layout_width="30sp"
+            android:layout_height="30sp" />
+        <ImageView
+            android:id="@+id/iv_wangyi"
+            android:layout_marginLeft="10sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_santiao"
+            android:src="@drawable/wangyi"
+            android:layout_width="40sp"
+            android:layout_height="40sp" />
+        <ImageView
+            android:layout_marginRight="10sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_biaotitouxiang"
+            android:layout_toLeftOf="@+id/iv_sandian"
+            android:src="@drawable/wo"
+            android:layout_width="30sp"
+            android:layout_height="30sp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_sandian"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cd"
+            android:layout_width="30sp"
+            android:layout_height="30sp" />
+
+    </RelativeLayout>
+
+    <com.example.kson.tablayout.widget.HorizontalScollTabhost
+        android:id="@+id/hst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.kson.tablayout.widget.HorizontalScollTabhost>
+
+</LinearLayout>

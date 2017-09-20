@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/ll_xinwen"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_xinwentp"
+            android:src="@drawable/left1"
+            android:layout_width="20sp"
+            android:layout_height="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_xinwen"
+                android:text="新闻"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/ziti333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_dingyue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_xinwen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_dingyue"
+            android:src="@drawable/left2"
+            android:layout_width="22sp"
+            android:layout_height="22sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_dingyue"
+                android:text="订阅"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/ziti333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_tupian"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_dingyue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_tupian"
+            android:src="@drawable/left3"
+            android:layout_width="20sp"
+            android:layout_height="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_tupian"
+                android:text="图片"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/ziti333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_shipin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tupian"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_shipin"
+            android:src="@drawable/left4"
+            android:layout_width="20sp"
+            android:layout_height="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_shipin"
+                android:text="视频"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/ziti333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_gentie"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_shipin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_gentie"
+            android:src="@drawable/left5"
+            android:layout_width="20sp"
+            android:layout_height="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_gentie"
+                android:text="跟帖"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/ziti333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

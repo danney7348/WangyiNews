@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baise_back"
+    android:orientation="vertical"
+    tools:context="wangyi.bwie.com.wangyinews.DengluActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/baise">
+
+            <ImageView
+                android:id="@+id/iv_name"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/name" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/baise">
+
+            <ImageView
+                android:id="@+id/iv_pwd"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/password" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_pwd" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@color/baise"
+            android:text="登陆"
+            android:textColor="@color/ziti666" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:text="还可以选择一下方式登陆"
+        android:textColor="@color/ziti666" />
+
+    <LinearLayout
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baise"
+        android:orientation="horizontal"
+        android:padding="15sp">
+
+        <RelativeLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_xinlang_login"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xinlangtupian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45sp"
+                android:text="新浪微博登陆"
+                android:textColor="@color/ziti666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_qq_login"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45sp"
+                android:text="QQ账号登陆"
+                android:textColor="@color/ziti666" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/baise"
+        android:layout_marginLeft="15sp"
+        android:text="没有账号？"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="15sp"
+        android:text="注册网易通行证"
+        android:textColor="#ff0000"
+        android:background="@color/baise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

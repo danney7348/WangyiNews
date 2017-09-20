@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_toLeftOf="@+id/iv_xiangxiadejiantou"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layout_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+        </HorizontalScrollView>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_xiangxiadejiantou"
+            android:src="@drawable/more_unfold"
+            android:layout_width="40sp"
+            android:layout_height="40sp" />
+    </RelativeLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
